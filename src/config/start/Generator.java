@@ -1,5 +1,6 @@
 package config.start;
 
+import org.junit.Test;
 import org.mybatis.generator.api.MyBatisGenerator;
 import org.mybatis.generator.config.Configuration;
 import org.mybatis.generator.config.xml.ConfigurationParser;
@@ -14,7 +15,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Generator {
-    public static void main(String[] a) {
+//    @Test
+    public void createConfig() {
         List<String> warnings = new ArrayList<String>();
         boolean overwrite = true;
         File configFile = new File("config/generatorConfig.xml");

@@ -2,7 +2,9 @@ package com.mt.mapper;
 
 import com.mt.domain.Equipment;
 import com.mt.domain.EquipmentExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface EquipmentMapper {
@@ -15,6 +17,12 @@ public interface EquipmentMapper {
     int insert(Equipment record);
 
     int insertSelective(Equipment record);
+
+    int insertCreate(Equipment record);
+
+    int insertBase(Equipment record);
+
+    List<Equipment> selectByClasss(String classs);
 
     List<Equipment> selectByExample(EquipmentExample example);
 
